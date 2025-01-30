@@ -1,0 +1,202 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212; /* Fundo escuro */
+    color: #e0e0e0; /* Texto claro */
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #1a1a1a, #333); /* Gradiente escuro */
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    margin-bottom: 40px;
+}
+
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra mais escura */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: rotate(10deg) scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.7); /* Sombra mais intensa */
+}
+
+h1 {
+    margin: 20px 0 10px;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8); /* Texto semi-transparente */
+}
+
+/* Skills Section */
+.skills {
+    text-align: center;
+    margin: 40px auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+.skills h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #e0e0e0; /* Texto claro */
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.skills-grid.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skill-item {
+    text-align: center;
+    padding: 20px;
+    background: #333; /* Fundo escuro para os itens */
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Sombra mais intensa */
+}
+
+.skill-item i {
+    font-size: 3rem;
+    color: #667eea; /* Cor do ícone */
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 1rem;
+    color: #e0e0e0; /* Texto claro */
+    margin: 0;
+}
+
+.projects {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #e0e0e0; /* Texto claro */
+}
+
+.projects-list {
+    display: flex;
+    gap: 20px;
+}
+
+.project-item {
+    background: #333; /* Fundo escuro para os itens */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.project-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #e0e0e0; /* Texto claro */
+}
+
+.project-item p {
+    font-size: 1rem;
+    color: #b0b0b0; /* Texto mais claro */
+    margin-bottom: 15px;
+}
+
+.project-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #ffffff; /* Cor do botão */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+
+
+/* Video Section */
+.video {
+    padding: 60px 20px;
+    text-align: center;
+    background: #1a1a1a; /* Fundo escuro */
+    margin: 40px auto;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra mais escura */
+}
+
+.video h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #e0e0e0; /* Texto claro */
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 10px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666; /* Texto mais suave */
+    margin-top: 60px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+footer p {
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(135deg, #121212, #1a1a1a); /* Degradê escuro */
+}
